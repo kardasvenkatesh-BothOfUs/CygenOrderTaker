@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="tab_label">12sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+    <dimen name="text_appearance_extra_small">12sp</dimen>
+    <dimen name="text_appearance_small">14sp</dimen>
+    <dimen name="text_appearance_medium">16sp</dimen>
+    <dimen name="text_appearance_large">18sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_xlarge">18sp</dimen>
+    <dimen name="text_xxlarge">20sp</dimen>
+
+    <dimen name="_100dp">100.0dip</dimen>
+    <dimen name="_10dp">10.0dip</dimen>
+    <dimen name="_12dp">12.0dip</dimen>
+    <dimen name="_13sp">13.0sp</dimen>
+    <dimen name="_14sp">14.0sp</dimen>
+    <dimen name="_150dp">150.0dip</dimen>
+    <dimen name="_15dp">15.0dip</dimen>
+    <dimen name="_16dp">16.0dip</dimen>
+    <dimen name="_18sp">18.0sp</dimen>
+    <dimen name="_19dp">19.0dip</dimen>
+    <dimen name="_1dp">1.0dip</dimen>
+    <dimen name="_20dp">20.0dip</dimen>
+    <dimen name="_20sp">20.0sp</dimen>
+    <dimen name="_25dp">25.0dip</dimen>
+    <dimen name="_2dp">2.0dip</dimen>
+    <dimen name="_30dp">30.0dip</dimen>
+    <dimen name="_35dp">35.0dip</dimen>
+    <dimen name="_40dp">40.0dip</dimen>
+    <dimen name="_45dp">45.0dip</dimen>
+    <dimen name="_50dp">50.0dip</dimen>
+    <dimen name="_60dp">60.0dip</dimen>
+    <dimen name="_55dp">55.0dip</dimen>
+    <dimen name="_5dp">5.0dip</dimen>
+    <dimen name="_70dp">70.0dip</dimen>
+    <dimen name="_7dp">7.0dip</dimen>
+
+
+    // payments
+    <dimen name="order_sheet_padding">8dp</dimen>
+    <dimen name="buttonInset">8dp</dimen>
+    <dimen name="buttonRadius">32dp</dimen>
+    <dimen name="buttonHorizontalPadding">16dp</dimen>
+    <dimen name="buttonVerticalPadding">18dp</dimen>
+    <dimen name="buttonMinWidth">160dp</dimen>
+    <dimen name="buttonTextSize">18sp</dimen>
+    <dimen name="sheetRadius">12dp</dimen>
+    <dimen name="sheetPadding">8dp</dimen>
+    <dimen name="orderMargin">32dp</dimen>
+    <dimen name="sheetSeparatorHeight">1dp</dimen>
+    <dimen name="order_sheet_info_horizontal_padding">40dp</dimen>
+
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+</resources>

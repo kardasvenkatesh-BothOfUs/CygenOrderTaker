@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/organic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@null"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/tableItemBgLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tableNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="2dp"
+                android:text="Table"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorDarkAsh"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tableIv"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tableNameTv"
+                android:src="@mipmap/table"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tableCustomerIv"
+                android:layout_width="@dimen/_16dp"
+                android:layout_height="@dimen/_16dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/tableNameTv"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_supervisor_account_24"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tableNumberTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_marginLeft="9dp"
+                android:layout_below="@+id/tableIv"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tablePersonsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/tableIv"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

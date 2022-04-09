@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logoBgColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="180dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:background="@mipmap/cygen_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:gravity="center"
+            android:text="Order Taking App"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/CancelReason"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dip"
+            android:padding="10dip"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/LicensedVersion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:layout_marginTop="30dp"
+        android:text="\u25BA Cozy Order Taker app works with existing windows version of CozyPOS through local network.
+\n\n\u25BAThis app needs to be mapped to the existing CozyPOS system in the local network to be able to use it.
+\n\n\u25BAMapping can be done by simply scanning the QR code on the About window of the CozyPos software from any system in the network.
+\n\n\u25BAAlternatively, mapping can be done by entering the system details manually.
+\n\n\u25BAIf you need further help please contact support@cozypos.com"
+        android:textColor="@color/colorBlack"
+        android:lineSpacingExtra="5dp"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_light_blue_bg_filled"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/qrs" />
+
+        <TextView
+            android:id="@+id/qr"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="Scan QR Code"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_corner_bg_filled"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:src="@drawable/pencil" />
+
+        <TextView
+            android:id="@+id/mann"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="Enter Manually"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

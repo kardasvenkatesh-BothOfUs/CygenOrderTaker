@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.1"
+                android:background="#4d6ce9"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                tools:ignore="Suspicious0dp">
+
+                <TextView
+                    android:id="@+id/cygenTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="CYGEN"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="66dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/welcomeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Welcome Back!"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="The Smartest Thing To Do With Your Hospitality Business. Australia’s POS Solution for your path towards success."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="top"
+                    tools:ignore="Suspicious0dp">
+
+                    <RelativeLayout
+                        android:id="@+id/logoLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/loginLogo"
+                            android:layout_width="200dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            card_view:srcCompat="@mipmap/cygen_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/loginLogo"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="We are glad to see you again!"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/editTextLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/logoLayout"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/usernameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Username"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/userNameEt"
+                            android:layout_width="500dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/usernameTextView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/rectangle_login_input_bg"
+                            android:hint="Enter Username"
+                            android:maxLines="1"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="#c1c1c1"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/passwordTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/userNameEt"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Password"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/passwordEt"
+                            android:layout_width="500dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/passwordTextView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/rectangle_login_input_bg"
+                            android:hint="Enter Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="#c1c1c1"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/forgotTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/passwordEt"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="20dp"
+                            android:text="Forgot Password"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/loginBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/forgotTextView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/rounded_button_blue_filled"
+                            android:elevation="3dp"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Login"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextLayout">
+
+                        <TextView
+                            android:id="@+id/forgotPasswordTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="40dp"
+                            android:text="Forgot Password"
+                            android:textColor="@color/colorbg"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cygen Dine-In POS</string>
+
+    <string name="input_all">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="made_with_love">Made with love by</string>
+    <string name="powered_by"> Copyright Spicy Bean Cafe</string>
+    <string name="secondary_caption"> Welcome to Spicy Bean Cafe</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:background="#f1f1f1"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/error_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/searchEditText"
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/rectangle_ash_stroke_bg"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Search Items"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/error_ok_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_message_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderLayout"
+            android:background="@drawable/rectangle_white_bg_filled"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Close"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/rectangle_green_bg"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Search"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

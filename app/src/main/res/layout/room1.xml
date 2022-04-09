@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:id="@+id/tableItemLayout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discountTypeLayout"
+                android:background="@drawable/rectangle_ash_fill_bg"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tableNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Table"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tableNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1"
+                    android:textColor="@color/redColor"
+                    android:textSize="20dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tableNameTextView"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="9dp"
+                    android:drawableStart="@drawable/ic_baseline_supervisor_account_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tableChairsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tableNameTextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_chair_blue"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:id="@+id/tableRelativeLayout"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:background="@drawable/total_rounded_ash_fill_bg"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tableIv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/table" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tableCustomerIv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_baseline_supervisor_account_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tableNumber1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableIv"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="5"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tablePersonsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tableIv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="5"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/areaNamesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="15dp"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areaRoom1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="ROOM 1"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areaRoom2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="ROOM 2"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areaRoom3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="ROOM 3"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areaRoom4Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="COURTYARD 1"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areaRoom5Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="COURTYARD 2"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areaRoom6Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="GARDEN 2"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areaRoom7Button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="ALFRESCO"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/roomOneLayout"
+            android:layout_width="500dp"
+            android:layout_height="400dp"
+            android:padding="20dp"
+            android:layout_below="@+id/areaNamesLayout"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs1Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_two_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs1TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="138dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs2Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:rotation="90"
+                    android:src="@mipmap/empty_four_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs2TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="138dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs3Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:rotation="90"
+                    android:src="@mipmap/empty_four_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs3TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/roomTwoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_below="@+id/areaNamesLayout"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs21Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_two_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs21TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="138dp"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs22Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_four_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs22TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="138dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs23Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_four_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs23TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs24Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_two_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs24TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/roomThreeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_below="@+id/areaNamesLayout"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs31Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:rotation="90"
+                    android:src="@mipmap/empty_four_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs31TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="T-51"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="138dp"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs32Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_four_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs32TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="138dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs33Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_four_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs33TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tableWithChairs34Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/empty_two_table"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tableChairs34TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center_horizontal"
+                    android:text="5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

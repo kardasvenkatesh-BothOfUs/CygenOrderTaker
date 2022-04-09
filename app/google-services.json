@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "149040180275",
+    "project_id": "cygenrestaurantdinein",
+    "storage_bucket": "cygenrestaurantdinein.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149040180275:android:9738bfb1adfed49b72c746",
+        "android_client_info": {
+          "package_name": "com.cygen.cygendineinpos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149040180275-15cgb5ig3luujpaf9k7qg2b32qp4491q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cygen.cygendineinpos",
+            "certificate_hash": "2c9183a4a33ad9ecb4b1ed1b4156e818d2a87a5c"
+          }
+        },
+        {
+          "client_id": "149040180275-oqg2ntq53ev9ni4gd94fa8ducfv8thoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHreUf3o3trvLcPsMj3rrEHHpLYSKY82M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149040180275-oqg2ntq53ev9ni4gd94fa8ducfv8thoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

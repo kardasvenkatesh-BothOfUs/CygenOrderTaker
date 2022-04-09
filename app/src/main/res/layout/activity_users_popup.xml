@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55dp"
+            android:background="@color/colorPrimaryDark"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Login To Spicy Bean Cafe"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/innerLoginCloseIv"
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_5dp"
+                android:src="@drawable/close_icon"></androidx.appcompat.widget.AppCompatImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20dp"
+            android:gravity="bottom"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_ash_line">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/userNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName"
+                    android:textSize="@dimen/_16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="@dimen/_25dp"
+                    android:layout_marginTop="@dimen/_15dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/userInnerPasswordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:background="@drawable/rectangle_ash_line"
+                    android:hint="Enter Password"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="#c1c1c1"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/logoutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_blue_filled"
+                    android:elevation="3dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Logout"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_blue_filled"
+                    android:elevation="3dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/oneLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fiveCentTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/twoLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tenCentTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/threeLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/twentyCentTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/fourLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fiftyCentTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/fiveLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/oneDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/sixLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-2dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/twoDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/sevenLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fiveDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/eightLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tenDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/nineLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80sp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/twentyDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/zeroLayout"
+                            android:layout_width="@dimen/_100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="-5dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/fiftyDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/hundredDollarLayout"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="-5dp"
+                            android:background="@drawable/cal_white_filled"
+                            android:elevation="2dp"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:translationZ="2dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:gravity="center"
+                                android:textColor="@color/lightAshColor"
+                                android:textSize="16dp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/hundredDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="26dp"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/clearTextLayout"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/cal_button_filled"
+                            android:foreground="?attr/selectableItemBackground">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/clearDollarTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:gravity="center"
+                                android:text="Clear"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20dp"
+                                android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/userRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/error_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_bg">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/itemNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Item Name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/itemPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemNameTv"
+                android:fontFamily="@font/montserrat_medium"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:text="$2.01"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_baseline_white_close"></androidx.appcompat.widget.AppCompatImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:layout_margin="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Repeat last used customization?"
+                android:textColor="@color/colorDarkAsh"
+                android:textSize="16dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/addonsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_textview"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="Chicken"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/error_ok_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addonsTextView"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/iWillChooseTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="I'LL CHOOSE"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textColor="@color/colorDarkAsh"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/repeatTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rectangle_green_bg"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Repeat Last"
+                    android:textAllCaps="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

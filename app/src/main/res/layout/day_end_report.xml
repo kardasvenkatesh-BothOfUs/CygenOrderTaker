@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/companyNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="Report"
+                android:textColor="@color/colorBlack"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="Mon 4/13/2021"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/headerLayout"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/salesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/salesHeaderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Sales And Taxes Summary"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/salesView"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/salesHeaderTextView"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorDarkAsh" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/totalNetSalesTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/salesHeaderTextView"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Total Net Sales"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/totalNetSalesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/salesHeaderTextView"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="$0.00"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/taxTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalNetSalesTv"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Tax"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/taxTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalNetSalesTv"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="$123.98"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/salesCategoryLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headerLayout"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/salesCategoryHeaderTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Hourly Sales"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/salesCategoryView"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/salesCategoryHeaderTextView"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorDarkAsh" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/salesCategoryView"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/hourSalesTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salesHeaderTextView"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Hour"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorDarkAsh"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/customerAvgSalesTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salesHeaderTextView"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Customer Avg"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorDarkAsh"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/orderAvgSalesTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salesHeaderTextView"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Order Average"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorDarkAsh"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/totalSalesTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salesHeaderTextView"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Total Sales"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorDarkAsh"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/paymentLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headerLayout"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/paymentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Category Sales"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/paymentView"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/paymentTextView"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorDarkAsh" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/categoryTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/paymentTextView"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Category"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/qtyTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/paymentTextView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Qty"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/salesTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/paymentTextView"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Total Sales"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/categoryTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/categoryTv"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="$0.00"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/qtyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qtyTv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="$0.00"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/totalSalesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/salesTv"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="$0.00"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/discountLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headerLayout"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/discountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Total Discounts"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/discountView"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/discountTextView"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorBlack" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/discountTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/discountView"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Reward Card"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/discountNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/discountView"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="$0.00"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headerLayout"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/cardTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="Payment Details"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/cardTextView"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorDarkAsh" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/AmexTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTextView"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Payment"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/amexTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardTextView"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Amount"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/paymentTypeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/AmexTv"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/paymentAmountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/AmexTv"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="1dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="$0.00"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorDarkAsh"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/noButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_below="@+id/paymentAmountTextView"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/rectangle_white_bg_filled"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Close"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/printTv"
+                        android:layout_width="120dp"
+                        android:layout_height="34dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/rectangle_green_bg"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center"
+                        android:text="Print"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

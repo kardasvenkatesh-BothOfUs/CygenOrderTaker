@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="Add Company and Site Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/closeIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:src="@drawable/close_icon"></ImageView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/companyNameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Company Name"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/mobileEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Company Mobile"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="18dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="20dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/emailEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Company Email"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/companyPhoneEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Company Phone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/companyWebsiteEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Company Website"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/countrySpinnerEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Country"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/stateSpinnerEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Select State"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/cityEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="City"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/postcodeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:hint="Postcode/PostalCode"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/addressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="start"
+                    android:hint="Address"
+                    android:maxLines="3"
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/bankDetailsEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="start"
+                    android:hint="Bank details"
+                    android:maxLines="3"
+                    android:padding="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_white_bg_filled"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/clickIvUpload"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_55dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_15dp"
+                        android:layout_weight="1"
+                        android:background="@color/lightAshColor"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center"
+                        android:text="Upload Company Logo "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/companyLogoImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="start"
+                        android:hint="Address"
+                        android:padding="10sp"
+                        android:src="@mipmap/dummy_icon_50"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/lightAshColor"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/updateCompanyBtn"
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/rectangle_green_bg"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Save"
+                    android:visibility="gone"
+                    android:textColor="@color/colorWhite"></androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/closeCompanyBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rectangle_ash_fill_bg"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Close"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"></androidx.appcompat.widget.AppCompatButton>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/addNewItemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/siteNameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_white_bg_filled"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:hint="Site Name"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/lightAshColor"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/currencySpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_white_bg_filled"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:hint="Choose Currency"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/lightAshColor"
+                        android:textSize="16dp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/siteUrlEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_white_bg_filled"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:hint="Site URL"
+                        android:paddingLeft="20dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/lightAshColor"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/sitecopyRightEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_white_bg_filled"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:hint="Copy Right"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/lightAshColor"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/sitedomainet"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_white_bg_filled"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:hint="DomainEt"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/lightAshColor"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addMainProductBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="SAVE"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="invisible"></androidx.appcompat.widget.AppCompatButton>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_white_bg_filled"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/clicksiteIvUpload"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_55dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10sp"
+                            android:layout_weight="1"
+                            android:background="@color/lightAshColor"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center"
+                            android:text="Upload Site Logo "
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/siteLogoImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="start"
+                            android:padding="10sp"
+                            android:hint="Address"
+                            android:src="@mipmap/dummy_icon_50"
+                            android:textColor="@color/colorBlack"
+                            android:textColorHint="@color/lightAshColor"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/closeSiteBtn"
+                            android:layout_width="400dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/rectangle_ash_fill_bg"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Close"
+                            android:textColor="@color/colorBlack"></androidx.appcompat.widget.AppCompatButton>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/updateSiteBtn"
+                            android:layout_width="400dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/rectangle_green_bg"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:text="Save"
+                            android:textColor="@color/colorWhite"></androidx.appcompat.widget.AppCompatButton>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

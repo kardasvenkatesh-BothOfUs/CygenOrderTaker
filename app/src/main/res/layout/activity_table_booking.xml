@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintCircleRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center_horizontal"
+                android:text="Table Reservation"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"></androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/reservationCloseIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_baseline_white_close"></androidx.appcompat.widget.AppCompatImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_ash_line"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="left|center_vertical"
+                    android:hint="Name"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/nameEditText"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_ash_line"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="left|center_vertical"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/mobileEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_ash_line"
+                    android:digits="0123456789"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="left|center_vertical"
+                    android:hint="Mobile"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/noOfPeopleEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_ash_line"
+                    android:digits="1234567890"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="left|center_vertical"
+                    android:hint="No Of People"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/dateEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_ash_line"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="left|center_vertical"
+                    android:hint="Date"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/timeEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_ash_line"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="left|center_vertical"
+                    android:hint="Available Time Slot"
+                    android:padding="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/lightAshColor"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rectangle_ash_line"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="start"
+                android:hint="Message"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/lightAshColor"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/tableBookingSubmitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/cateringTextView"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:shadowRadius="10"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

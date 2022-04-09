@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_bg">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:padding="15dp"
+                android:text="Order Details"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/closeIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_baseline_white_close"></ImageView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightAshColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/logoBgColor"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:id="@+id/discountTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/cDetailsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/orderIdTextViewNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="left"
+                            android:maxLength="15"
+                            android:maxLines="2"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/orderTypeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="left"
+                            android:maxLength="15"
+                            android:maxLines="2"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/orderDateTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textColor="@color/colorDarkAsh"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/customerNameTextViewNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="left"
+                            android:maxLength="15"
+                            android:maxLines="2"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/customerMobileTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="left"
+                            android:maxLength="15"
+                            android:maxLines="2"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/paymnentStatusTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textColor="@color/colorDarkAsh"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tableNoTextViewNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="left"
+                            android:maxLength="15"
+                            android:maxLines="2"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/amountTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="left"
+                            android:maxLength="15"
+                            android:maxLines="2"
+                            android:paddingLeft="15dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/othersTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textColor="@color/colorDarkAsh"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/orderDetailsItemsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cDetailsLayout"
+                    android:layout_marginTop="10sp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_1dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:background="@color/lightAshColor"
+        android:weightSum="4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/adminProductIv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center_horizontal"
+            android:text="Image"
+            android:textColor="@color/colorBlack"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"></View>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Item"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"></View>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductBrandTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Brand"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:visibility="gone"></View>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductCatTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Category"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"></View>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductSubCatTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="SubCat"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:visibility="gone"></View>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductBarcodeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Barcode"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:visibility="gone"></View>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductPurchasePriceTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Purchase"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:visibility="gone"></View>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductQtyTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Qty"
+            android:visibility="gone"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:visibility="gone"></View>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductSalePriceTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Sale Price"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"></View>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adminProductTaxTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center_horizontal"
+            android:text="Tax"
+            android:textColor="@color/colorBlack"
+            android:textSize="11dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/adminProductStatusTv"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.3"
+                android:background="@color/light_green"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:padding="10sp"
+                android:textSize="8dp"
+                android:text="Active"
+                android:textColor="@color/colorWhite" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lightAshColor" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/adminSupplierItemActionIv"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_baseline_edit_24" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

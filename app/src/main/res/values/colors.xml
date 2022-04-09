@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#1C60AE</color>
+    <color name="colorPrimaryDark">#09478f</color>
+    <color name="colorAccent">#1C60AE</color>
+
+    <color name="colorBlack">#333</color>
+    <color name="colorLightBlack">#E2DEDE</color>
+    <color name="colorDarkAsh">#555555</color>
+    <color name="darkAsh">#333333</color>
+
+    <color name="cat_bg">#0f1a29</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorbg">#377FC2</color>
+    <color name="goldenTint">#FFD700</color>
+    <color name="yellowColor">#FFB61E</color>
+
+    <color name="billGreen">#07ff07</color>
+    <color name="lightgrey">#CD853F</color>
+    <color name="addOnOrange">#ff8c00</color>
+    <color name="addOnLiteBlue">#96a7d7</color>
+    <color name="addOnRed">#f1645c</color>
+    <color name="addOnBlue">#296fab</color>
+    <color name="addOnGreen">#8eb900</color>
+    <color name="lightblue">#377FC2</color>
+    <color name="lightgreen">#66CDAA</color>
+    <color name="green">#5c9b45</color>
+    <color name="dark_green">#00a65a</color>
+    <color name="lightred">#F08080</color>
+    <color name="redColor">#fe1a1a</color>
+    <color name="pinkColor">#d81a60</color>
+    <color name="paymentButtonColor">#f55252</color>
+
+    <color name="lightBlueColor">#0073b7</color>
+    <color name="skyBlue">#8ac6ef</color>
+    <color name="lightSkyBlue">#F0FAFF</color>
+    <color name="lightAshColor">#e1e1e1</color>
+    <color name="textBgColor">#dddddd</color>
+    <color name="logoBgColor">#f5f6f7</color>
+    <color name="addOnSelectedColor">#777777</color>
+
+    <color name="deliveryBg">#f7d7da</color>
+    <color name="takeawayBg">#fff3cd</color>
+    <color name="dineinBg">#d1e6dd</color>
+
+    <color name="deliveryHeader">#db3644</color>
+    <color name="takeawayHeader">#ffbb0f</color>
+    <color name="dineinHeader">#1d8c59</color>
+
+    <color name="deliveryText">#6d282b</color>
+    <color name="takeawayText">#715f37</color>
+    <color name="dineinText">#274938</color>
+
+    <color name="track_green">#00b100</color>
+    <color name="colorGreen">#5c9a43</color>
+    <color name="thickaddonred">#d14b43</color>
+    <color name="dark_sky_blue">#49aff5</color>
+    <color name="light_green">#77c458</color>
+
+</resources>

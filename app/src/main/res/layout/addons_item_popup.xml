@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Bun and Wings Pack"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="$20.00"
+            android:textColor="@color/redColor"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/productNameTextView"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/addOnBottomLayout"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/addOnsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/addOnHeaderNameFirst"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/lightAshColor"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="Add On Type One"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/lineViewOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/addOnHeaderNameFirst"
+                            android:background="@color/lightAshColor" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/addOnsRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lineViewOne"
+                            android:scrollbars="vertical" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/choiceBreadLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addOnsLayout"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/addTwoHeaderName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/lightAshColor"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="Add On Type One"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/lineViewOne1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/addTwoHeaderName"
+                            android:background="@color/lightAshColor" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/choiceBreadRecylerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lineViewOne1"
+                            android:scrollbars="vertical" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/exclusionLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/choiceBreadLayout"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="2dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/addOnHeaderNameThird"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/lightAshColor"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="Add On Type Two"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/lineViewTwo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/addOnHeaderNameThird"
+                            android:background="@color/lightAshColor" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/exclusionRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lineViewTwo3"
+                            android:layout_centerHorizontal="true"
+                            android:scrollbars="vertical" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/addOnBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/addNoteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="50dp"
+                android:layout_toLeftOf="@+id/addOnCloseTv"
+                android:background="@drawable/rectangle_ash_line"
+                android:gravity="start"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:hint="Add a note(extra sauce, no onions, etc)"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textColor="@color/colorBlack" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/addOnCloseTv"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/addOnAddItemTextView"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Close"
+                android:visibility="gone"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/addOnAddItemTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/rectangle_green_bg"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone"
+                android:text="Add Item"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

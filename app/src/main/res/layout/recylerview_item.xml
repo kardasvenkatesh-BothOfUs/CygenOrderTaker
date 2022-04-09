@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/logoBgColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="46sp"
+        android:layout_gravity="center"
+        android:background="@color/logoBgColor"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/itemNameTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1.6"
+            android:drawableRight="@drawable/ic_baseline_edit_blue_24"
+            android:gravity="center"
+            android:text="Item Name 1 item Name 2 item Name 3"
+            android:textColor="@color/colorDarkAsh"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightAshColor" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp">
+
+            <ImageView
+                android:id="@+id/cart_minus_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/icon_minus"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/qtyTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/colorDarkAsh"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cart_plus_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/icon_add"
+                android:padding="8dp"
+                android:src="@drawable/icon_add" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightAshColor" />
+
+        <TextView
+            android:id="@+id/priceInvoiceTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/rectangle_ash_line"
+            android:gravity="center"
+            android:text=" 1 "
+            android:paddingRight="5dp"
+            android:drawableRight="@drawable/ic_baseline_edit_blue_24"
+            android:textColor="@color/colorDarkAsh"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightAshColor" />
+
+        <TextView
+            android:id="@+id/subTotalTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="$543.00"
+            android:textColor="@color/colorDarkAsh"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightAshColor" />
+
+        <ImageView
+            android:id="@+id/statusTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_baseline_delete_outline_24" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

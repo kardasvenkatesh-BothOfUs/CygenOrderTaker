@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightAshColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/organic37"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/addOnRed"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="@color/light_green"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp"
+                    tools:ignore="MissingConstraints">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/dineIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Dine In"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/dineInCountTv"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10sp"
+                            android:layout_toRightOf="@+id/dineIn"
+                            android:background="@drawable/rounded_white"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorPrimaryDark"></androidx.appcompat.widget.AppCompatTextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/kitchenDeliveryOrdersRecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/organic37"
+                    android:padding="2dp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/noDataTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="NO DINEIN ORDERS"
+                    android:textColor="@color/addOnSelectedColor"
+                    android:visibility="gone"></androidx.appcompat.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/organic38"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:background="@color/addOnRed"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="@color/light_green"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp"
+                    tools:ignore="MissingConstraints">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/addOnRed">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tableTop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Table Top"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tableTopCountTv"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10sp"
+                            android:layout_toRightOf="@+id/tableTop"
+                            android:background="@drawable/rounded_white"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorPrimaryDark"></androidx.appcompat.widget.AppCompatTextView>
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/kitchenDeliveryOrdersRecyclerview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/organic38"
+                    android:padding="2dp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/noDataTextView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="NO TABLETOP ORDERS FOUND"
+                    android:textColor="@color/addOnSelectedColor"
+                    android:visibility="gone"></androidx.appcompat.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/organic39"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50dp"
+                    android:background="@color/addOnRed"
+                    android:elevation="5dp"
+                    app:cardBackgroundColor="@color/light_green"
+                    app:cardCornerRadius="5dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp"
+                    tools:ignore="MissingConstraints">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite"
+                        android:gravity="center">
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/takeaway"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Take Away"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/takeawayCountTv"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10sp"
+                            android:layout_toRightOf="@+id/takeaway"
+                            android:background="@drawable/rounded_blue"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorWhite"></androidx.appcompat.widget.AppCompatTextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/kitchenDeliveryOrdersRecyclerview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/organic39"
+                    android:padding="2dp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/noDataTextView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="NO TAKEAWAY ORDERS"
+                    android:textColor="@color/addOnSelectedColor"
+                    android:visibility="gone"></androidx.appcompat.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/organic40"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/addOnRed"
+                    android:elevation="5dp"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="@color/light_green"
+                    app:cardCornerRadius="10sp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="0dp"
+                    tools:ignore="MissingConstraints">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_green">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/deliveryCountTv"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10sp"
+                            android:layout_toRightOf="@+id/delivery"
+                            android:background="@drawable/rounded_white"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorPrimaryDark"></androidx.appcompat.widget.AppCompatTextView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/delivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:text="Delivery"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:textStyle="bold"></androidx.appcompat.widget.AppCompatTextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/kitchenDeliveryOrdersRecyclerview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/organic40"
+                    android:padding="5dp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/noDataTextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="NO DELIVERY ORDERS"
+                    android:textColor="@color/addOnSelectedColor"
+                    android:visibility="gone"></androidx.appcompat.widget.AppCompatTextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/refreshScreenTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:layout_marginLeft="10sp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="Refresh"
+                android:textColor="@color/colorBlack"></androidx.appcompat.widget.AppCompatTextView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/backScreenTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:layout_toRightOf="@+id/refreshScreenTv"
+                android:layout_marginLeft="30sp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="Back"
+                android:textColor="@color/colorBlack"></androidx.appcompat.widget.AppCompatTextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered By"
+                    android:textColor="@color/colorPrimaryDark"></androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/cygen_logo"></androidx.appcompat.widget.AppCompatImageView>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

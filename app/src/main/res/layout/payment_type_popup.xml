@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/closeIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_baseline_close_24"></androidx.appcompat.widget.AppCompatImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40dp">
+
+        <RelativeLayout
+            android:id="@+id/error_message_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/error_text_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:text="Payment Type?"
+                android:textColor="@color/colorDarkAsh"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/error_ok_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/error_message_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/squareupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/rectangle_green_bg"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Squareup"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/othersButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rectangle_white_bg_filled"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Others"
+                android:textColor="@color/colorDarkAsh"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
